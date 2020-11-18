@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the same every time 1`] = `
+<DocumentFragment>
+  <li
+    class="Todo-li"
+  >
+    <span>
+      <button
+        class="Todo-btn"
+      >
+        X
+      </button>
+    </span>
+  </li>
+</DocumentFragment>
+`;

@@ -1,11 +1,12 @@
 import { render } from '@testing-library/react';
-import App from './App';
+import NewTodoForm from './NewTodoForm';
 
 it("should render without going up in smoke", () => {
-  render(<App />);
+    render(<NewTodoForm />);
 });
-
+  
 it("should render the same every time", () => {
-  const {asFragment} = render(<App />);
+  const {asFragment} = render(<NewTodoForm />);
   expect(asFragment()).toMatchSnapshot();
 });
+  
