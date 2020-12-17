@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {v4 as uuid} from "uuid";
 
-const NewTodoForm = ({addTodo}) => {
+const NewTodoForm = ({add}) => {
     const INITIAL_STATE = {
         todo: ''
     };
@@ -20,7 +20,7 @@ const NewTodoForm = ({addTodo}) => {
         const newTodo = {
             ...formData, id: uuid()
         }
-        addTodo(newTodo);
+        add(newTodo);
         setFormData(INITIAL_STATE);
     }
     return (
